@@ -1,0 +1,9 @@
+networks:
+  web:
+
+services:
+  swagger:
+    image: swaggerapi/swagger-editor
+    restart: always
+    networks:
+      - web
