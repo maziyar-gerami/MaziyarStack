@@ -4,10 +4,10 @@ networks:
 
 volumes:
   pgdata:
-  
+
 services:
 
-  db:
+  web-wiki-db:
     image: postgres:15
     container_name: wikijs-db
     restart: always
@@ -20,15 +20,15 @@ services:
     networks:
       - web    
 
-  wiki:
+  web-wiki:
     image: ghcr.io/requarks/wiki:2
     container_name: wikijs
     depends_on:
-      - db
+      - web-wiki-db
     restart: always
     environment:
       DB_TYPE: postgres
-      DB_HOST: db
+      DB_HOST: web-wiki-db
       DB_PORT: 5432
       DB_USER: wikijs
       DB_PASS: wikijsrocks
