@@ -1,0 +1,37 @@
+networks:
+  web:
+    external: true  
+
+volumes:
+  pgdata:
+  
+services:
+
+  db:
+    image: postgres:15
+    container_name: wikijs-db
+    restart: always
+    environment:
+      POSTGRES_DB: wiki
+      POSTGRES_USER: wikijs
+      POSTGRES_PASSWORD: wikijsrocks
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - web    
+
+  wiki:
+    image: ghcr.io/requarks/wiki:2
+    container_name: wikijs
+    depends_on:
+      - db
+    restart: always
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: wikijs
+      DB_PASS: wikijsrocks
+      DB_NAME: wiki
+    networks:
+      - web  
