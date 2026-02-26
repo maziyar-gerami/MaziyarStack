@@ -5,11 +5,8 @@ networks:
 services:
   web-ollama:
     image: ollama/ollama
-    container_name: ollama
     networks:
       - web
-    ports:
-      - "11434:11434"
     volumes:
       - ollama:/root/.ollama
 
