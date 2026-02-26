@@ -1,28 +1,31 @@
-MaziyarStack
+# MaziyarStack
 
-MaziyarStack is a curated stack of infrastructure and service configurations — a collection of ready‑to‑use deployment and orchestration setups for popular tools and platforms. The goal is to provide a cohesive and opinionated base for building, deploying, and managing various services in a reproducible and consistent environment.
+**MaziyarStack** is a curated stack of infrastructure and service configurations — a collection of ready‑to‑use deployment and orchestration setups for popular tools and platforms. The goal is to provide a cohesive and opinionated base for building, deploying, and managing various services in a reproducible and consistent environment.
 
-🧩 Included Components
+## 🧩 Included Components
 
 This repository contains configuration and deployment templates for the following services:
 
-Service	Purpose
-Appsmith	Open‑source low‑code framework for building internal tools
-Nginx	Reverse proxy and web server configurations
-Ollama	Local model server or AI service integration
-Portainer	UI for Docker and Kubernetes container management
-Swagger	API documentation and client generation tooling
-WikiJs	Modern wiki platform powered by Node.js
-WordPress	Popular CMS for websites and blogs
-.gitignore	Common patterns to ignore in version control
+| Service    | Purpose                                          |
+|-----------|-------------------------------------------------|
+| **Appsmith**  | Open‑source low‑code framework for building internal tools |
+| **Nginx**     | Reverse proxy and web server configurations   |
+| **Ollama**    | Local model server or AI service integration |
+| **Portainer** | UI for Docker and Kubernetes container management |
+| **Swagger**   | API documentation and client generation tooling |
+| **WikiJs**    | Modern wiki platform powered by Node.js      |
+| **WordPress** | Popular CMS for websites and blogs          |
+| **.gitignore**| Common patterns to ignore in version control |
 
-💡 Each folder represents infrastructure, deployment, or configuration files related to the named service. You can customize them to suit your environment.
+> 💡 Each folder represents infrastructure, deployment, or configuration files related to the named service. You can customize them to suit your environment.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-⚠️ This README assumes familiarity with Docker, Docker Compose, and typical DevOps workflows. Adjust commands and paths according to your system setup.
+> ⚠️ This README assumes familiarity with **Docker**, **Docker Compose**, and typical DevOps workflows. Adjust commands and paths according to your system setup.
 
-1. Clone the Repository
+### 1. Clone the Repository
+
+```sh
 git clone https://github.com/maziyar-gerami/MaziyarStack.git
 cd MaziyarStack
 2. Inspect Service Folders
@@ -84,7 +87,7 @@ Optional: Traefik, certbot/Let’s Encrypt for SSL termination
 Directory	Description
 Appsmith/	Appsmith deployment & overrides
 Nginx/	Nginx configuration, proxy rules, SSL support
-Ollama/	AI model server or llm integrations
+Ollama/	AI model server or LLM integrations
 Portainer/	Portainer UI and data persistence
 Swagger/	API documentation specs and UI configs
 WikiJs/	WikiJs service with persistent storage
@@ -112,3 +115,10 @@ Specify a license for this project (e.g., MIT, Apache‑2.0, etc.) — if you wa
 
 Contributions are welcome!
 Feel free to open issues, propose pull requests, or suggest new service folders and templates.
+
+
+---
+
+If you want, I can also **add a nice Table of Contents with clickable links** and **GitHub badges** (build status, license, Docker pull, etc.) to make it look more professional.  
+
+Do you want me to do that next?
