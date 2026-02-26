@@ -1,0 +1,13 @@
+# Keycloak database files
+Appsmith/stacks/data/keycloak/keycloakdb.mv.db
+Appsmith/stacks/data/keycloak/keycloakdb.trace.db
+
+# MongoDB files
+Appsmith/stacks/data/mongodb/_mdb_catalog.wt
+*.wt
+
+# Redis database dump
+Appsmith/stacks/data/redis/dump.rdb
+
+# All log files
+*.log
